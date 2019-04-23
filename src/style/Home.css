@@ -1,0 +1,36 @@
+.home-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px 70px;
+    background: var(--gray);
+    position: relative;
+}
+.search-bar {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.load {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 30px;
+    border-radius: 3px;
+    background: orange;
+    color: white;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    transition-delay: 2s;
+}
+.max-load {
+    opacity: 1
+}
+@media screen and (max-width: 425px) {
+    .home-container {
+        padding: 20px 0;
+    }
+}
